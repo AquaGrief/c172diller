@@ -1,0 +1,359 @@
+.site-header {
+  background: #004080;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+}
+
+.main-nav a {
+  color: #cce4ff;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+
+.btn {
+  background: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1629233650020-aa014ed76f8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Vzc25hJTIwMTcyfGVufDB8fDB8fHww') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.hero-container {
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.models {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #002b5c;
+}
+
+.model-carousel {
+  padding: 60px 20px;
+  background-color: #eef3f8;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 30px;
+  padding: 40px 20px;
+  scroll-behavior: smooth;
+}
+
+.carousel-card {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn {
+  background: #004080;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: #002d5c;
+}
+
+.carousel-btn.prev {
+  margin-right: 10px;
+}
+
+.carousel-btn.next {
+  margin-left: 10px;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.buy-button:hover {
+  background-color: #002d5c;
+}
+
+.buy-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #002d5c;
+}
+
+
+.footer {
+  background: #002d5c;
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.features-section {
+  position: relative;
+  height: 450px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* чтобы клики проходили сквозь видео */
+  z-index: 1;
+  filter: brightness(0.5);
+}
+
+.features-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  background: url('https://images.unsplash.com/photo-1715939405343-0f4ca8cc046f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNlc3NuYSUyMDE3MnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+}
+
+.features-content h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.features-content ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.features-content ul li {
+  margin-bottom: 12px;
+}
+
+
+/* Адаптив для экранов до 600px (телефоны) */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .main-nav a {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 40vh;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .models {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .carousel-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .carousel-track {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .carousel-card {
+    flex: 0 0 250px;
+    padding: 20px;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+
+  .buy-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .buy-container {
+    padding: 30px 10px;
+  }
+
+  .contact-section {
+    padding: 40px 10px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .features-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .features-content {
+    max-width: 90%;
+    padding: 15px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+  }
+
+  .features-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .features-content ul {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .footer {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+}
