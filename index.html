@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диллер c172</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="logo">AeroElite Group</div>
+  <nav class="main-nav">
+    <a href="#home">Главная</a>
+    <a href="#about">О самолёте</a>
+    <a href="#models">Модификации</a>
+    <a href="#dealers">Где купить</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  </header>
+
+ <section class="hero">
+  <div class="hero-container">
+    <h1>Добро пожаловать в мир Cessna 172</h1>
+    <p>Надежный и проверенный временем самолёт для пилотов всех уровней</p>
+    <a href="#about" class="btn">Узнать больше</a>
+  </div>
+ </section>
+
+<section class="model-carousel">
+  <h1 class="section-title">Модели Cessna 172</h1>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev">&#10094;</button>
+
+    <div class="carousel-track" id="carousel">
+      <div class="carousel-card">
+        <h2>172A (1960)</h2>
+        <p>Ранняя модель с поплавками и стреловидным хвостом.</p>
+      </div>
+      <div class="carousel-card">
+        <h2>172B</h2>
+        <p>Укороченные шасси, Skyhawk впервые использовано.</p>
+      </div>
+      <div class="carousel-card">
+        <h2>172C</h2>
+        <p>Добавлен автопилот и ключ зажигания.</p>
+      </div>
+      <div class="carousel-card">
+        <h2>172D</h2>
+        <p>Фюзеляж ниже, педали обновлены, двигатель мощнее.</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+<section class="features-section">
+
+  <div class="features-content">
+    <h2>Почему стоит выбрать Cessna 172?</h2>
+    <ul>
+      <li>✔ Надёжность и проверенная годами конструкция</li>
+      <li>✔ Простота управления — идеальный выбор для пилотов всех уровней</li>
+      <li>✔ Экономичный расход топлива</li>
+      <li>✔ Современная авионика и комфортная кабина</li>
+      <li>✔ Отличная репутация и широкая поддержка по всему миру</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="buy">
+  <div class="buy-container">
+<a href="https://www.controller.com/listings/for-sale/cessna/172" target="_blank" class="buy-button">
+  Купить самолёт
+</a>
+  </div>
+</section>
+
+<section id="contacts" class="contact-section">
+  <h2>Связаться с нами</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Сообщение" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+<section class="footer">
+  <p>&copy; 2023 AeroElite Group. Все права защищены.</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </div>
+
+</body>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const cards = carousel.querySelectorAll('.carousel-card');
+  let index = 0;
+
+  function scrollToCard(i) {
+    cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+  }
+
+  document.querySelector('.carousel-btn.next').addEventListener('click', () => {
+    index = (index + 1) % cards.length;
+    scrollToCard(index);
+  });
+
+  document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
+    index = (index - 1 + cards.length) % cards.length;
+    scrollToCard(index);
+  });
+
+  // Start from the first
+  scrollToCard(index);
+</script>
+
+
+</html>
